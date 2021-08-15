@@ -32,9 +32,31 @@ const chars = [
 
 //***SORT***
 //1. Sort by mass
+const sortedByMass = chars.sort((a, b) => a.mass - b.mass);
+console.log('sorted by mass');
+console.log(sortedByMass);
+
 //2. Sort by height
+const sortedByHeight = chars.sort((a, b) => a.height - b.height);
+console.log('sorted by height');
+console.log(sortedByHeight);
+
 //3. Sort by name
+// commented out because i can't get this to work. not only that, when i uncomment this, every other sort function doesnt work. idfgi.
+// const sortedByName = chars.sort((a, b) => {
+//   if (a.name < b.name) return 1;
+//   return -1;
+// });
+// console.log('sorted by name');
+// console.log(sortedByName);
+
 //4. Sort by gender
+const sortedByGender = chars.sort((a, b) => {
+  if (a.gender < b.gender) return -1;
+  return 1;
+});
+console.log('sorted by gender');
+console.log(sortedByGender);
 
 //***REDUCE***
 //1. Get total mass of all chars
