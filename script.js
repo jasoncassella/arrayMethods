@@ -36,20 +36,17 @@ const chars = [
 //3. Sort by name
 //4. Sort by gender
 
-
 //***REDUCE***
 //1. Get total mass of all chars
 //2. Get total height of all chars
 //3. Get total number of chars by eye color
 //4. Get total number of chars in all the char names
 
-
 //***EVERY***
 //1. Does every char have blue eyes?
 //2. Does every char have mass more than 40?
 //3. Is every char shorter than 200?
 //4. Is every char male?
-
 
 //***FILTER***
 //1. Get chars with mass greater than 100
@@ -63,7 +60,6 @@ const maleChars = chars.filter((char) => char.gender === 'male');
 
 //4. Get all female chars
 const femalechars = chars.filter((char) => char.gender === 'female');
-
 
 //***MAP***
 //1. Get array of all names
@@ -80,7 +76,6 @@ const nameAndHeight = chars.map((char) => ({
 
 //4. Get array of all first names
 const firstNames = chars.map((char) => char.name.split(' '));
-
 
 //***SOME***
 //1. Is there at least one male char?
