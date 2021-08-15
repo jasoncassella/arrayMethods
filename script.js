@@ -1,3 +1,4 @@
+// i hate abbreivations like char, str, etc. but i am using them to practice one line arrow functions
 const chars = [
   {
     name: 'Luke Skywalker',
