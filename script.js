@@ -42,13 +42,12 @@ console.log('sorted by height');
 console.log(sortedByHeight);
 
 //3. Sort by name
-// commented out because i can't get this to work. not only that, when i uncomment this, every other sort function doesnt work. idfgi.
-// const sortedByName = chars.sort((a, b) => {
-//   if (a.name < b.name) return 1;
-//   return -1;
-// });
-// console.log('sorted by name');
-// console.log(sortedByName);
+const sortedByName = chars.sort((a, b) => {
+  if (a.name < b.name) return 1;
+  return -1;
+});
+console.log('sorted by name');
+console.log(sortedByName);
 
 //4. Sort by gender
 const sortedByGender = chars.sort((a, b) => {
@@ -57,18 +56,6 @@ const sortedByGender = chars.sort((a, b) => {
 });
 console.log('sorted by gender');
 console.log(sortedByGender);
-
-//***REDUCE***
-//1. Get total mass of all chars
-//2. Get total height of all chars
-//3. Get total number of chars by eye color
-//4. Get total number of chars in all the char names
-
-//***EVERY***
-//1. Does every char have blue eyes?
-//2. Does every char have mass more than 40?
-//3. Is every char shorter than 200?
-//4. Is every char male?
 
 //***FILTER***
 //1. Get chars with mass greater than 100
@@ -111,3 +98,15 @@ const isOneCharTall = chars.some((char) => char.height > 210);
 
 //4. Is there at least one char that has mass less than 50?
 const isOneCharSkinny = chars.some((char) => char.mass < 50);
+
+//***REDUCE***
+//1. Get total mass of all chars
+//2. Get total height of all chars
+//3. Get total number of chars by eye color
+//4. Get total number of chars in all the char names
+
+//***EVERY***
+//1. Does every char have blue eyes?
+//2. Does every char have mass more than 40?
+//3. Is every char shorter than 200?
+//4. Is every char male?
